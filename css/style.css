@@ -362,18 +362,18 @@ body {
 }
 
 .btn {
-    color: #f5faff;
-    text-align: center;
-    font-family: 'Comfortaa';
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 133.8%;
-    letter-spacing: 0.65px;
-    border-radius: 40px;
-    text-decoration: none;
-    background: #64d370;
-    padding: 10px 68px;
-    display: inline-block;
+	color: #f5faff;
+	text-align: center;
+	font-family: 'Comfortaa';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 133.8%;
+	letter-spacing: 0.65px;
+	border-radius: 40px;
+	text-decoration: none;
+	background: #64d370;
+	padding: 10px 68px;
+	display: inline-block;
 }
 
 .order__content {
@@ -609,6 +609,11 @@ body {
 
 /* Nutrition content */
 
+.nutrition__content {
+	display: flex;
+	justify-content: space-between;
+}
+
 .left__side {
 	width: 31.05%;
 	margin: 40px 0;
@@ -639,11 +644,10 @@ body {
 	margin-bottom: 15px;
 }
 
-
 .category__item--title.white {
 	color: #f5faff;
 	margin-right: 30px;
-	font-size: 25px;	
+	font-size: 25px;
 }
 
 .category__item--calories.white {
@@ -651,7 +655,6 @@ body {
 	font-size: 18px;
 	text-transform: uppercase;
 }
-
 
 .category__item--calories.white span {
 	text-transform: none;
@@ -670,49 +673,135 @@ body {
 /* Nutrition price */
 
 .nutrition__price {
-    width: 100%;
-    max-width: 380px;
-    padding: 10px;
-		margin-top: 10px;
+	width: 100%;
+	max-width: 380px;
+	padding: 10px;
+	margin-top: 10px;
 }
 
 .nutrition__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
 }
 
 .nutrition__item:last-child {
-    border-bottom: none;
+	border-bottom: none;
 }
 
 .days {
-    flex: 2;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: left;
-    padding-right: 10px;
+	flex: 2;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: left;
+	padding-right: 10px;
 }
 
 .discount {
-    flex: 1;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
+	flex: 1;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: center;
 }
 
 .discount.transparent {
-    color: transparent;
+	color: transparent;
 }
 
 .current__price {
-    flex: 1;
-    font-size: 14px;
-		font-weight: 500;
-    text-align: right;
+	flex: 1;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: right;
 }
 
 .btn.margin {
 	margin-top: 10px;
+}
+
+/* Right side */
+
+.right__side {
+	width: 68.95%;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+.nutrition__days {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	padding: 15px 50px;
+	margin-bottom: 40px;
+	border-radius: 30px;
+	background: #f5faff;
+	box-shadow: 0 0 40px 0 rgba(86, 86, 86, 0.3);
+}
+
+.nutrition__days--item {
+	color: #000;
+	justify-content: space-between;
+	font-family: 'Comfortaa';
+	font-size: 25px;
+	font-weight: 700;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.nutrition__days--item.active {
+	color: #64d370;
+}
+
+/* Nutrition meal */
+
+.nutrition__meal--times {
+	width: 100%;
+	justify-content: space-between;
+	max-width: 880px;
+	padding: 10px;
+
+	padding: 40px 40px;
+	border-radius: 30px;
+	background: #f5faff;
+	box-shadow: 0 0 40px 0 rgba(86, 86, 86, 0.3);
+}
+
+.meal__times--item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	margin-bottom: 67px;
+}
+
+.meal__time {
+	flex: 1;
+	color: #000;
+	font-size: 16px;
+	text-align: left;
+	padding-right: 10px;
+}
+
+.meal__name {
+	flex: 2;
+	color: #000;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: normal;
+	text-align: left;
+}
+
+.meal__price {
+	text-align: left;
+	color: #000;
+
+	font-size: 18px;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.meal__times--item:last-child {
+	margin-bottom: 0;
 }
