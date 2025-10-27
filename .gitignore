@@ -1,0 +1,17 @@
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Кеш
+*.log
+__pycache__/
+dist/
+build/
