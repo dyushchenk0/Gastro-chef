@@ -1,0 +1,267 @@
+/* Intro */
+
+.intro {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	min-height: 820px;
+	align-items: flex-start;
+	overflow: visible;
+}
+
+.intro__inner {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	gap: 80px;
+	padding: 0 60px;
+}
+
+.intro__menu {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+
+	left: 30px;
+	top: 1px;
+	gap: 35px;
+	z-index: 5;
+}
+
+.menu__item {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 70px;
+	height: 70px;
+
+	font-size: 12px;
+	font-weight: 500;
+	text-decoration: none;
+	color: #333;
+
+	background: #f5faff;
+	border-radius: 50%;
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+	transition: all 0.3s ease;
+}
+
+.menu__item:first-child,
+.menu__item:last-child span {
+	color: #020202;
+	text-align: center;
+	font-family: 'Comfortaa';
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 138.5%;
+}
+
+.menu__item:last-child {
+	flex-direction: column;
+}
+
+/* Intro content */
+
+.intro__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	gap: 60px;
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.intro__text--block {
+	flex: 1;
+	max-width: 500px;
+}
+
+.intro__title {
+	color: #020202;
+	font-family: 'Comfortaa';
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	word-wrap: break-word;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+.intro__title span {
+	color: #64d370;
+}
+
+.intro__subtitle {
+	color: #020202;
+	font-size: 20px;
+	line-height: 133.8%;
+	margin-bottom: 35px;
+}
+
+.intro__subtitle span {
+	color: #64d370;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 133.8%;
+}
+
+.intro__order {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	justify-content: flex-start;
+}
+
+.btn {
+	color: #f5faff;
+	text-align: center;
+	font-family: 'Comfortaa';
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 133.8%;
+	letter-spacing: 0.65px;
+	border-radius: 40px;
+	text-decoration: none;
+	background: #64d370;
+	padding: 10px 68px;
+	display: inline-block;
+}
+
+.order__content {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.order__text {
+	color: #020202;
+	white-space: nowrap;
+	font-size: 20px;
+	line-height: 133.8%;
+}
+
+.order__price {
+	color: #64d370;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 100%;
+}
+
+/* Intro media */
+
+.intro__media--block {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.intro__media {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	right: 50px;
+	border-radius: 50%;
+	background: #64d370;
+}
+
+.intro__media::after {
+	content: '';
+	position: absolute;
+	width: 1200px;
+	height: 1200px;
+	border-radius: 50%;
+	background: #64d370;
+	transform: translate(10%, -2%);
+	z-index: -1;
+	overflow: hidden;
+}
+
+.image__circle {
+	width: 100%;
+	border-radius: 50%;
+	border: 30px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+}
+
+.image-circle::before {
+	content: '';
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	right: -5px;
+	bottom: -5px;
+	border-radius: 50%;
+	border: 2px solid rgba(100, 211, 112, 0.3);
+	z-index: 1;
+	overflow: hidden;
+}
+
+.intro__photo {
+	max-width: 600px;
+	width: 100%;
+}
+
+.intro__photo img {
+	width: 100%;
+	display: block;
+}
+
+@media (max-width: 1230px) {
+	.intro__content {
+		gap: 40px;
+		max-width: 90%;
+	}
+}
+
+/* Планшеты (768px - 1024px) */
+@media (max-width: 1024px) {
+	.intro__content {
+		gap: 40px;
+		max-width: 90%;
+	}
+}
+
+/* Мобильные (576px - 768px) */
+@media (max-width: 768px) {
+	.intro__content {
+		flex-direction: column;
+		gap: 30px;
+		text-align: center;
+	}
+
+	.intro__text--block {
+		order: 2;
+	}
+
+	.intro__media--block {
+		order: 1;
+	}
+}
+
+/* Маленькие мобильные (до 576px) */
+@media (max-width: 576px) {
+	.intro__content {
+		gap: 20px;
+		padding: 0 15px;
+	}
+}
